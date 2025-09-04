@@ -34,7 +34,7 @@ namespace LogGravityGrenade
             
             RoomSpawnPoints = new List<RoomSpawnPoint>
             {
-                new RoomSpawnPoint // új példány
+                new RoomSpawnPoint
                 {
                     Room = RoomType.HczArmory, // hogy hova spawnoljon
                     Chance = 100f // mennyi eséllyel spawnoljon

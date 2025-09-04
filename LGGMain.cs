@@ -18,7 +18,7 @@ namespace LogGravityGrenade
 
         public override Version RequiredExiledVersion { get; } = new Version(9, 6, 2, 0);
 
-        public override void OnEnabled() // bekapcsolja a plugin
+        public override void OnEnabled()
         {
             base.OnEnabled();
             LGGMain.WeedItem = new LogGravityGrenadeItem(); // a weeditemet a LogGravityGrenadeItem példánya lesz
@@ -27,7 +27,7 @@ namespace LogGravityGrenade
             Log.Info("A customitem is registered");
         }
 
-        public override void OnDisabled() // kikapcsoljuk a plugint
+        public override void OnDisabled()
         {
             base.OnDisabled();
             bool flag = LGGMain.WeedItem != null; // megnézzük hogy a példány nem null
