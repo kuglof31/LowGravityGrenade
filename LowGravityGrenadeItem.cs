@@ -13,7 +13,7 @@ using Exiled.Events.EventArgs.Player;
 
 namespace LogGravityGrenade
 {
-    public class LogGravityGrenadeItem : CustomGrenade
+    public class LowGravityGrenadeItem : CustomGrenade
     {
         public override string Name { get; set; } = "Low Gravity Grenade";
 

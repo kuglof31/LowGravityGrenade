@@ -14,9 +14,9 @@ namespace LogGravityGrenade
         [Description("Debug mode")]
         public bool Debug { get; set; } = false;
 
-        public List<LogGravityGrenadeItem> LogGravityGrenadeItems { get; private set; } = new List<LogGravityGrenadeItem>
+        public List<LowGravityGrenadeItem> LogGravityGrenadeItems { get; private set; } = new List<LowGravityGrenadeItem>
         {
-            new LogGravityGrenadeItem()
+            new LowGravityGrenadeItem()
         };
     }
 }

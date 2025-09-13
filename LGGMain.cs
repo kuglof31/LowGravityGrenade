@@ -21,7 +21,7 @@ namespace LogGravityGrenade
         public override void OnEnabled()
         {
             base.OnEnabled();
-            LGGMain.WeedItem = new LogGravityGrenadeItem();
+            LGGMain.WeedItem = new LowGravityGrenadeItem();
             Extensions.Register(LGGMain.WeedItem);
             CustomItem.RegisterItems(false, base.Config);
             Log.Info("A customitem is registered");
@@ -40,6 +40,6 @@ namespace LogGravityGrenade
             CustomItem.UnregisterItems();
         }
 
-        public static LogGravityGrenadeItem WeedItem;
+        public static LowGravityGrenadeItem WeedItem;
     }
 }
