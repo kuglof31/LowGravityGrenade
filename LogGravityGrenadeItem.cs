@@ -36,20 +36,20 @@ namespace LogGravityGrenade
             {
                 new RoomSpawnPoint
                 {
-                    Room = RoomType.HczArmory, // hogy hova spawnoljon
-                    Chance = 100f // mennyi eséllyel spawnoljon
+                    Room = RoomType.HczArmory,
+                    Chance = 100f
                     
 
                 }
             }
         };
 
-        protected override void SubscribeEvents() // feliratkozik az eventekre az itemmel kapcsolatosan
+        protected override void SubscribeEvents()
         {
             base.SubscribeEvents();
         }
 
-        protected override void UnsubscribeEvents() // leiratkozik az eventekről az itemmel kapcsolatosan
+        protected override void UnsubscribeEvents()
         {
             base.UnsubscribeEvents();
         }
@@ -58,7 +58,7 @@ namespace LogGravityGrenade
         {
             ev.TargetsToAffect.Clear();
 
-            bool flag = !this.Check(ev.Player.CurrentItem); // lecsekkolja hogy igaz vagy hamis
+            bool flag = !this.Check(ev.Player.CurrentItem);
             if (!flag)
             {
                 UnityEngine.Vector3 position = ev.Position;

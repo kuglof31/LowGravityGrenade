@@ -21,8 +21,8 @@ namespace LogGravityGrenade
         public override void OnEnabled()
         {
             base.OnEnabled();
-            LGGMain.WeedItem = new LogGravityGrenadeItem(); // a weeditemet a LogGravityGrenadeItem példánya lesz
-            Extensions.Register(LGGMain.WeedItem); // exiledos custom item regisztrálás, regisztráljuk az osztály példányt
+            LGGMain.WeedItem = new LogGravityGrenadeItem();
+            Extensions.Register(LGGMain.WeedItem);
             CustomItem.RegisterItems(false, base.Config);
             Log.Info("A customitem is registered");
         }
@@ -30,13 +30,13 @@ namespace LogGravityGrenade
         public override void OnDisabled()
         {
             base.OnDisabled();
-            bool flag = LGGMain.WeedItem != null; // megnézzük hogy a példány nem null
-            if (flag) // ha nem null
+            bool flag = LGGMain.WeedItem != null;
+            if (flag)
             {
                 Extensions.Unregister(LGGMain.WeedItem);
                 CustomItem.Registered.Remove(LGGMain.WeedItem);
                 LGGMain.WeedItem = null;
-            } // kiregisztráljuk a custom itemet
+            }
             CustomItem.UnregisterItems();
         }
 
