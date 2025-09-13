@@ -1,2 +1,0 @@
-C:\Users\kende\Downloads\LogGravityGrenade\obj\x64\Debug\LogGravityGrenade.csproj.AssemblyReference.cache
-C:\Users\kende\Downloads\LogGravityGrenade\obj\x64\Debug\LogGravityGrenade.csproj.CoreCompileInputs.cache
