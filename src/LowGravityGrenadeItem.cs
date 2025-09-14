@@ -4,12 +4,11 @@ using Exiled.API.Features.Spawn;
 using Exiled.CustomItems.API.Features;
 using Exiled.Events.EventArgs.Map;
 using Exiled.API.Enums;
-using MEC;
 using System;
 using System.Collections.Generic;
 using System.Runtime.CompilerServices;
-using UnityEngine;
 using Exiled.Events.EventArgs.Player;
+using MEC;
 
 namespace LogGravityGrenade
 {
